@@ -16,6 +16,11 @@ function distanceFromHqInFeet(pickUpBlock) {
   return distanceFromHqInBlocks(pickUpBlock) * distancePerBlockInFeet;
 }
 
+function distanceTravelledInFeet(start, destination) {
+  const distancePerBlockInFeet = 264;
+  return Math.abs(destination - start) * distancePerBlockInFeet;
+}
+
 console.log(distanceFromHqInBlocks(43)); 
 console.log(distanceFromHqInBlocks(50)); 
 console.log(distanceFromHqInBlocks(34)); 
@@ -23,3 +28,7 @@ console.log(distanceFromHqInBlocks(34));
 console.log(distanceFromHqInFeet(43)); 
 console.log(distanceFromHqInFeet(50)); 
 console.log(distanceFromHqInFeet(34)); 
+
+console.log(distanceTravelledInFeet(43));
+console.log(distanceTravelledInFeet(50));
+console.log(distanceTravelledInFeet(34));
